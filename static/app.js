@@ -1,0 +1,3 @@
+const search=document.querySelector('#search'), severity=document.querySelector('#severity'), status=document.querySelector('#status'), rows=[...document.querySelectorAll('#incidents tbody tr[data-search]')], shown=document.querySelector('#shown');
+function filterRows(){let n=0; for(const r of rows){const ok=r.dataset.search.includes((search?.value||'').toLowerCase())&&(!severity?.value||r.dataset.severity===severity.value)&&(!status?.value||r.dataset.status===status.value);r.hidden=!ok;if(ok)n++;}if(shown)shown.textContent=`Showing ${n} incidents`;}
+[search,severity,status].forEach(x=>x?.addEventListener('input',filterRows));

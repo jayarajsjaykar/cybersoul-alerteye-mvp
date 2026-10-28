@@ -1,0 +1,5 @@
+[
+  {"event_key":"sample-001","timestamp":"2026-10-28T04:00:00Z","camera":"CAM-01","location":"North entrance","event_type":"Intrusion","confidence":0.91,"summary":"Sample imported alert: restricted-zone entry."},
+  {"event_key":"sample-002","timestamp":"2026-10-28T04:02:00Z","camera":"CAM-02","location":"Main lobby","event_type":"Crowd density","confidence":0.78,"summary":"Sample imported alert: crowd threshold exceeded."},
+  {"event_key":"sample-003","timestamp":"2026-10-28T04:04:00Z","camera":"CAM-03","location":"Parking level B1","event_type":"Fall / accident","confidence":0.82,"summary":"Sample imported alert: possible fall requires human verification."}
+]
